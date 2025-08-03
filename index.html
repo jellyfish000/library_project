@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <dialog id="bookDialog">
+        <form id="bookForm">
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" required>
+            <!-- author title no, of pages and status -->
+
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="pages">Number of pages</label>
+            <input type="number" id="pages" name="pages" >
+
+            <label for="status">Status</label>
+            <select name="status" id="status">
+                <option value="reading">Reading</option>
+                <option value="finished">Finished</option>
+                <option value="on-hold">On Hold</option>
+            </select>
+
+        <div class="actions">
+            <button type="button">Cancel</button>
+            <button type="submit">Save</button>
+        </div>
+
+
+        </form>
+
+    </dialog>
+    <p>
+        <button id="showDialog">Add Book</button>
+    </p>
+    <div id="libraryDisplay">
+        <h1>Books in the library:</h1>
+        <div id="bookList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
